@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Muli&family=VT323&display=swap:wght@400;700&display=swap');
+
+
+*{
+ box-sizing: border-box;
+}
+body {
+  font-family: 'Muli', sans-serif;
+}
+ 
+ /* Homepage styling */
+
+ .homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+ }
+ 
+ 
+ .logo {
+   width: 300px;
+ }
+p {
+  font-size: 20px;
+  padding-top: 100px;
+}
+
+.text {
+  font-size: 20px;
+  color: rgb(154, 0, 202, 0.6); 
+  padding: 0px;
+  font-family: 'VT323', monospace;
+}
+
+/* Movies Pages styling */
+
+main {
+  margin-left: 30px;
+  display: flex; 
+  flex-wrap: wrap;
+  z-index: -1;
+}
+
+
+/*tidy this up with my own primary colours*/
+:root {
+  /* --primary-color: #22254b;
+  --secondary-color: #373b69; */
+}
+
+.moviesPage {
+  margin: 50px;
+
+ }
+
+ .moviesPage .logo {
+   display: flex;
+   align-self: center;
+ }
+
+ .movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: rgba(70, 57, 148, 0.8);
+  box-shadow: 0 4px 5px  rgb(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.movie img {
+  width: 100%;
+} 
+
+.movie-info {
+  
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+  margin-top: 0;
+  
+}
+
+.movie-info span {
+  background-color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.movie-info span.green {
+  color: rgb(4, 153, 4);
+}
+
+.movie-info span.orange {
+  color: rgb(207, 83, 0);
+}
+
+.movie-info span.red {
+  color: rgb(238, 37, 47);
+}
+
+
+.overview {
+  background-color: white;
+  padding: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  color: black;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+    
+}
+ 
+
+ 
