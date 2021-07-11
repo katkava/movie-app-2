@@ -1,6 +1,3 @@
-# movie-app
-
-
 # MovieJudge
 An app built for MovieJudge that allows the user to browse for popular movies or search up ones they are interested and find out their rating and description.
 
