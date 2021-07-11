@@ -1,3 +1,15 @@
+const openBtn = document.querySelector('.open-btn')
+const closeBtn = document.querySelector('.close-btn')
+const nav = document.querySelectorAll('.nav')
+
+openBtn.addEventListener('click', () => {
+  nav.forEach(nav_el => nav_el.classList.add('visible'))
+})
+
+closeBtn.addEventListener('click', () => {
+  nav.forEach(nav_el => nav_el.classList.remove('visible'))
+})
+
 const API_URL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=57aa7054725294868e3483070415317b&page=1"
 
 const IMG_PATH = "https://image.tmdb.org/t/p/w500"
@@ -22,7 +34,7 @@ async function getMovies(url) {
 function showMovies(movies) {
   main.innerHTML = ""
   movies.forEach((movie) => {
-    const { title, poster_path, vote_average } = movie
+    const { title, poster_path, vote_average, overview } = movie
 
     const movieEl = document.createElement('div')
     movieEl.classList.add('movie')
@@ -35,9 +47,7 @@ function showMovies(movies) {
             <span class="${getClassByRate(vote_average)}">${vote_average}</span>
             <div class="overview">
                 <h3>Overview</h3>
-                ${overview}
-            </div>
-    </div>
+                <p>${overview}</p>
 </div>    
 `
 main.appendChild(movieEl)
