@@ -135,7 +135,11 @@ class Header extends HTMLElement {
 
             <ul class="list">
                 <li><a href="movies.html">Movies</a></li>
+<<<<<<< HEAD
                 <li><form id="form"><input type="text" id="search" class="search" placeholder="search"></form></li>
+=======
+                <li><form><input type="text" id="search" class="search" placeholder="search"></form></li>
+>>>>>>> cdd956d14d597c9cd2aa999756432e349f7ccd8d
             </ul>
         </div> 
     </div>
@@ -147,7 +151,10 @@ class Header extends HTMLElement {
 } 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cdd956d14d597c9cd2aa999756432e349f7ccd8d
   customElements.define('header-component', Header);
 
 
@@ -162,5 +169,8 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     nav.forEach(nav_el => nav_el.classList.remove('visible'))
 })
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> cdd956d14d597c9cd2aa999756432e349f7ccd8d
