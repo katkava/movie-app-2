@@ -2,12 +2,12 @@
 
 
 # MovieJudge
-A movie app that allows the user to browse for popular movies or search up ones they are interested and find out their rating and description.
+An app built for MovieJudge that allows the user to browse for popular movies or search up ones they are interested and find out their rating and description.
 
 **Link to project:** 
 https://moviejudge.netlify.app/index.html
 
-![alt tag](http://placecorgi.com/1200/650)
+![Gif of web app](https://imgur.com/vRZV2Vt)
 
 ## How It's Made:
 
@@ -15,7 +15,8 @@ https://moviejudge.netlify.app/index.html
 
 A simple app built with The Movie Database API, and a stylish, modern UI. 
 
-
+## Optimisations for future
+For future improvement, add to API security and optimise code by components, deleting reduntant code. 
 
 ## Examples:
 Take a look at some of my favourite projects I'm currently working on!
