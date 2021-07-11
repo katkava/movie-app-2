@@ -7,11 +7,7 @@ An app built for MovieJudge that allows the user to browse for popular movies or
 **Link to project:** 
 https://moviejudge.netlify.app/index.html
 
-<<<<<<< HEAD
-![alt tag](https://imgur.com/vRZV2Vt)
-=======
 ![ Video of site](https://media.giphy.com/media/mGakGdasKfJp3IDiGR/giphy.gif)
->>>>>>> 0336b84a180bd5c1207c1eedf6159d53ea5afab2
 
 ## How It's Made:
 
