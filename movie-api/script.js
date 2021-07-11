@@ -1,14 +1,30 @@
+//Nav 
+
 const openBtn = document.querySelector('.open-btn')
-const closeBtn = document.querySelector('.close-btn')
 const nav = document.querySelectorAll('.nav')
+const closeBtn = document.querySelector('.close-btn').addEventListener('click', closeNav)
+
+document.addEventListener("keydown", function(){
+  var x=event.keyCode || event.which;
+  if(x==13)
+  {
+    closeNav()
+  }
+  })  
+
 
 openBtn.addEventListener('click', () => {
   nav.forEach(nav_el => nav_el.classList.add('visible'))
 })
 
-closeBtn.addEventListener('click', () => {
+function closeNav() {
   nav.forEach(nav_el => nav_el.classList.remove('visible'))
-})
+}
+
+
+
+
+//Fetch requests for movie page
 
 const API_URL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=57aa7054725294868e3483070415317b&page=1"
 
@@ -32,22 +48,23 @@ async function getMovies(url) {
 }
 
 function showMovies(movies) {
-  main.innerHTML = ""
+  main.innerHTML = ''
   movies.forEach((movie) => {
     const { title, poster_path, vote_average, overview } = movie
 
     const movieEl = document.createElement('div')
+    
     movieEl.classList.add('movie')
 
     movieEl.innerHTML = `
-    <div class="movie">
     <img src="${IMG_PATH + poster_path}" alt="${title}">
     <div class="movie-info">
         <h3>${title}</h3>
             <span class="${getClassByRate(vote_average)}">${vote_average}</span>
             <div class="overview">
                 <h3>Overview</h3>
-                <p>${overview}</p>
+                ${overview}
+
 </div>    
 `
 main.appendChild(movieEl)

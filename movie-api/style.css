@@ -28,10 +28,10 @@ p {
   padding-top: 100px;
 }
 
-.text {
-  font-size: 20px;
+.text, h1 {
+  font-size: 24px;
   color: rgb(154, 0, 202, 0.6); 
-  padding: 0px;
+  padding: 10px;
   font-family: 'VT323', monospace;
 }
 
@@ -50,14 +50,6 @@ p {
     letter-spacing: 2px;
 }
 
-/* Movies Pages styling */
-
-main {
-  margin-left: 30px;
-  display: flex; 
-  flex-wrap: wrap;
-  z-index: -1;
-}
 
 /* NAV styling */
 
@@ -179,20 +171,25 @@ main {
   --secondary-color: #373b69; */
 }
 
+/* Movies Pages styling */
+
+main, h1 {
+  margin-left: 30px;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: -1;
+}
+
 .moviesPage {
   margin: 50px;
-
- }
-
- .moviesPage .logo {
-   display: flex;
-   align-self: center;
- }
+}
+ 
 
  .movie {
   width: 300px;
   margin: 10px;
-  background-color: rgba(70, 57, 148, 0.8);
+  background-color: rgb(154, 0, 202);
   box-shadow: 0 4px 5px  rgb(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
@@ -209,7 +206,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem 1rem;
   letter-spacing: 0.5px;
 }
 
