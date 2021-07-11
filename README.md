@@ -9,7 +9,7 @@ https://moviejudge.netlify.app/index.html
 
 
 
-https://user-images.githubusercontent.com/68730265/125206794-ecb66600-e280-11eb-8488-1576d149227e.mp4
+https://imgur.com/a/yc99PGy
 
 
 ## How It's Made:
