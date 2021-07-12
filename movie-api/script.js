@@ -4,7 +4,7 @@ const IMG_PATH = "https://image.tmdb.org/t/p/w500"
 
 const SEARCH_URL = 'https://api.themoviedb.org/3/search/movie?api_key=57aa7054725294868e3483070415317b&query="'
 
-
+//comment
 
 const form = document.getElementById("form")
 const search = document.getElementById("search")
